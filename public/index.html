@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ChessList</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">
+        <h1>ChessList</h1>
+        <!-- h1태그 검색사이트가 좋아함. 문서상에 1개만 있는 것을 권장한다. -->
+      </a>
+
+      <ul class="menu">
+        <li><a href="#chessinside" id="chessinside">Chessinside</a></li>
+        <li><a href="#chessfreak" id="chessfreak">체스프릭</a></li>
+        <li><a href="#ssgssg2" id="ssgssg2">슥슥이</a></li>
+        <li><a href="#hanging_pawns" id="hanging_pawns">Hanging Pawns</a></li>
+        <li><a href="#daniel_naroditsky" id="daniel_naroditsky">Daniel Naroditsky</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <h2 id="selected-youtuber"></h2>
+
+      <h2 id="greeting">Welcome to ChessList!</h2>
+
+      <form id="search-container" style="display: none">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="찾고 싶은 영상의 오프닝을 입력하세요..."
+        />
+        <button>검색</button>
+        <div id="results"></div>
+      </form>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

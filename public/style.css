@@ -1,0 +1,101 @@
+nav {
+  width: 200px;
+  background-color: #eee;
+  border-right: 1px solid #ddd;
+  /* height:100% 그냥 적용 안됨. 부모개념이 있어야 채워질 수 있음 */
+
+  position: fixed; /*공중에 떠서 공간을 차지하지 않음*/
+  height: 100%; /*fixed를 해서 높이 100%가 가능해짐*/
+}
+h1 {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/*메뉴*/
+.menu li a {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  padding: 0 20px;
+  font-size: 12px;
+  color: #555;
+}
+.menu li a:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+#greeting {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 170;
+  font-style: italic;
+
+  position: relative;
+  left: 250px;
+  top: 10px;
+}
+
+#selected-youtuber {
+  position: relative;
+  left: 800px;
+  top: 10px;
+}
+
+/* 검색 바 및 결과 */
+#search-container {
+  margin-left: 220px; /* 메뉴바 공간 확보 */
+  margin-right: 30px; /* 공간 확보22 */
+  padding: 20px;
+}
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#results {
+  margin-top: 10px;
+}
+
+.video-item {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.video-item img {
+  width: 120px;
+  height: 90px;
+  margin-right: 15px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.video-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.video-info a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.video-info a:hover {
+  text-decoration: underline;
+}
+
+.video-date {
+  font-size: 0.9rem;
+  color: #999;
+}
