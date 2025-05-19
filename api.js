@@ -1,7 +1,6 @@
-// src/services/api.js
 const API_BASE_URL = "http://127.0.0.1:8000";
 
-export async function fetchVideosByYoutuber(youtuber, opening) {
+async function fetchVideosByYoutuber(youtuber, opening) {
   try {
     const response = await fetch(
       `${API_BASE_URL}/videos?youtuber=${youtuber}&opening=${opening}`
@@ -15,3 +14,5 @@ export async function fetchVideosByYoutuber(youtuber, opening) {
     throw error;
   }
 }
+
+window.fetchVideosByYoutuber = fetchVideosByYoutuber;

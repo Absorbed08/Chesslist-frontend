@@ -1,6 +1,3 @@
-import { setupNavbar } from "../src/components/Navbar.js";
-import { fetchVideosByYoutuber } from "../src/services/api.js";
-
 // Navbar 설정
 const YoutubersId = [
   "chessinside",
