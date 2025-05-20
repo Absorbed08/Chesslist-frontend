@@ -3,7 +3,7 @@ const API_BASE_URL = "https://chesslist-api.onrender.com";
 async function fetchVideosByYoutuber(youtuber, opening) {
   try {
     const response = await fetch(
-      `${API_BASE_URL}/videos?youtuber=${youtuber}&opening=${opening}`
+      `${API_BASE_URL}/videos/?youtuber=${youtuber}&opening=${opening}`
     );
     if (!response.ok) {
       throw new Error("Failed to fetch videos");
