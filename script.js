@@ -67,3 +67,16 @@ searchForm.addEventListener("submit", async (event) => {
     resultsContainer.innerHTML = `<p>영상을 불러오는 중 오류가 발생했습니다: ${error.message}</p>`;
   }
 });
+
+// 후원하기 버튼 기능
+const donateButton = document.getElementById("donate-button");
+const donatePopup = document.getElementById("donate-popup");
+const closeDonate = document.getElementById("close-donate");
+
+donateButton.addEventListener("click", () => {
+  donatePopup.classList.toggle("hidden");
+});
+
+closeDonate.addEventListener("click", () => {
+  donatePopup.classList.add("hidden");
+});
