@@ -37,6 +37,9 @@ searchForm.addEventListener("submit", async (event) => {
   try {
     const videos = await fetchVideosByYoutuber(youtuber, opening);
 
+    // ✅ 최신순 정렬
+    videos.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     if (videos.length === 0) {
       resultsContainer.innerHTML = "<p>검색 결과가 없습니다.</p>";
       return;
